@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy ASP app to Azure Web App - laboratory4
+name: Build and deploy ASP app to Azure Web App - Laboratory4
 
 on:
   push:
@@ -55,15 +55,15 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_14A0180B27414B55AACDFD0A1524481A }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_68089B2FB25C48C1BD2EADC5A2913D7C }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_4304E33F74F148AAB9E793965279F858 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_080EF2450868482EBB78B7F118F45E4D }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_8359705EA78E493CB1942574E59F1D8D }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_D2FA7758EA4241679931EE8BE360355E }}
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'laboratory4'
+          app-name: 'Laboratory4'
           slot-name: 'Production'
           package: .
           
